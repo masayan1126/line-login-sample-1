@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {signIn, signOut, useSession} from "next-auth/react";
 
 export default function Home() {
   const url = process.env.NEXT_PUBLIC_LINE_AUTH_REQUEST_URL
@@ -12,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <a href={url}>LINEログイン</a>
+        <button onClick={() => signIn("line")}>LINEログインする</button>
       </main>
     </>
   )
