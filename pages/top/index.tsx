@@ -38,7 +38,7 @@ export async function getServerSideProps (context: any) {
         //         client_secret: process.env.NEXT_PUBLIC_LINE_AUTH_CLIENT_SECRET,
         //     }
         // );
-        const res = {data: "hoge"}
+        const res = {data: context.query}
         
         return res.data
     }
