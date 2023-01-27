@@ -31,7 +31,7 @@ export async function getServerSideProps () {
             process.env.NEXT_PUBLIC_LINE_ACCESS_TOKEN_URL || "",
             {
                 grant_type: 'authorization_code',
-                code: router.query.code,
+                code: "CkDNchtBmw7GHmwGGa2e",
                 redirect_uri: process.env.NEXT_PUBLIC_LINE_AUTH_REDIRECT_URI,
                 client_id: process.env.NEXT_PUBLIC_LINE_AUTH_CLIENT_ID,
                 client_secret: process.env.NEXT_PUBLIC_LINE_AUTH_CLIENT_SECRET,
