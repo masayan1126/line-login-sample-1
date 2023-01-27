@@ -37,15 +37,15 @@ export async function getServerSideProps () {
                 client_secret: process.env.NEXT_PUBLIC_LINE_AUTH_CLIENT_SECRET,
             }
         );
-        const data = res.data
+        
+        return res.data
+    }
     
-        return {
-            props: {
-                data,
-            }
+    const data = await generateAccessToken()
+
+    return {
+        props: {
+            data,
         }
     }
-
-
-    generateAccessToken()
 }
