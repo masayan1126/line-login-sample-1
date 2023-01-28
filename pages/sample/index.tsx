@@ -48,9 +48,9 @@ const Sample = () => {
             <div>
                 <h3>体重</h3>
                 {/* <span>{inputValue} </span> */}
+                <input type="text" value={inputValue} onChange={handleChange} min="0" max="100" />kg
                 <p>{text}</p>
                 {/* <input type="range" value={rangeValue} onChange={handleChange} min="0" max="100" /> */}
-                <input type="text" value={inputValue} onChange={handleChange} min="0" max="100" />kg
             </div>
         </>
     );
